@@ -21,6 +21,13 @@ class VehicleResource extends JsonResource
             case 'imgURL':
                 $response['imgURL'] = $this->imgURL;
                 break;
+            case 'vehicleInformation':
+                return[
+                    'make' => $this->make,
+                    'model' => $this->model,
+                    'rate' => $this->rate,
+                    'imgURL' => $this->imgURL,
+                ];
 
             default:
             break;
